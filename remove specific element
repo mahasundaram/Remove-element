@@ -1,0 +1,23 @@
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        List<Integer> arr=new ArrayList<>();
+        arr.add(10);
+        arr.add(49);
+        arr.add(45);
+        arr.add(20);
+        arr.add(30);
+        System.out.println("enter array elements:" +arr);
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter remove element:" );
+         int r=sc.nextInt();
+        if(arr.remove( Integer.valueOf(r))){
+            System.out.println(" element removed");
+        }
+        else{
+            System.out.println("element not found");
+        }
+        
+        System.out.println("updated array:"+arr);
+    }
+}
